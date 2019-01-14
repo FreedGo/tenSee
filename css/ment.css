@@ -1,0 +1,67 @@
+@charset "utf-8";
+/** 管理面板 **/
+.my_top{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	text-align: center;
+	background-position: center;
+	background-color:#000;
+}
+.my_top:after{background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5) 100%);}
+
+
+.my_userye{
+	width:800px;
+	margin:0 auto;
+	margin-top:320px;
+	color:#FFF;
+	letter-spacing: 2px;
+}
+.my_userye h5{font-size:14px;margin-bottom:10px;}
+.my_userye p{font-size:26px;}
+
+.myuser{}
+.user{
+	margin:0 auto;
+	width:500px;
+	height:400px;
+	margin-top:-70px;
+	text-align: center;
+}
+.userpic{width:140px;height:140px;border:4px solid #FFF;border-radius:100px;overflow:hidden;margin: 0 auto;}
+.userpic img{width:140px;height:140px;}
+.user h1{margin-top:20px;margin-bottom:15px;}
+.user ul{display:inline-block;}
+.user li{float:left;margin-right:8px;width:16px;height:16px;background-color:#bebebe;}
+.user li a{color:#FFF;font-size:12px;display: block;}
+.user li em{float:left;}
+#t1{width:auto;background-color:#fff;font-size:12px;color:#666;}
+.user_add{margin-top:20px;padding-bottom:90px;}
+.user_add .layui-btn{height:36px;width:160px;font-size:14px;color:#FFF;background-color:#ee2222;letter-spacing:2px;	}
+
+
+.my_bg{background-color:#f4f4f4;padding:20px 0px;}
+.my_ment{border-radius:8px;background-color:#FFF;width:220px;color:#333;}
+.my_ment a{color:#333!important;}
+.my_ment li{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#eee;}
+.layui-nav-itemed>.layui-nav-child{background-color:#fff!important;}
+.layui-nav-tree .layui-nav-child a{color:#333;}
+.layui-nav-tree .layui-nav-item a:hover {
+    background-color: #fff;
+}
+.layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    margin-top: -9px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #999;
+}
+.layui-nav .layui-nav-more{border-top-color:#999;}
+.layui-nav-tree .layui-nav-bar{width: 5px;background-color:#ee2222;}
+
+
+
+
+
+
+
+

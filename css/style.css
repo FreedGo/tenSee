@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* 十见网 2018-9-29 */
+@import "../layui/css/layui.css";
+/*body{font:12px"微软雅黑", Arial, Helvetica,sans-serif;color:#333;margin:0;padding:0;background:#fff;}*/
+body{font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.clearfix:after {content:"";display:block;visibility:hidden;height:0;clear:both;}
+.clearfix {zoom:1;}
+a{text-decoration: none;}
+a:hover{color:#dd3635;}
+ul,h1,h2,h3,h4,h5,h6,h7,p,blockquote{margin:0px;padding:0px;}
+strong,em{font-weight: normal;font-style: normal;}
+.lf{float:left;}
+.rt{float:right;}
+.main{width:1200px;margin:0 auto;}
+
+/* 通用头部 */
+.header{width:100%;height:30px;margin:35px 0px;text-align:center;}
+.header_top{min-width:1200px;overflow:hidden;position: relative;}
+.header_logo{height:30px;left:150px;position:absolute;display:block;z-index: 999;}
+.header_logo img{height:30px;}
+.header_login{position:absolute;right:150px;top:40px;}
+.header_so{margin-right:10px;}
+.header_so_ico{width:20px;height:20px;background-image:url(../images/header_us_ico.png);background-repeat: no-repeat;display: block;background-position:-10px -20px;}
+
+/* 通用尾部 */
+.footer{background-color:#202020;padding-top:60px;font-size:12px;color:#FFF;letter-spacing:2px;}
+.footer_quick{width:519px;}
+.footer_quick ul{float:left;margin-right:70px;}
+.footer_quick li{margin-bottom:20px;font-weight: bold;}
+.footer_quick b{margin-bottom:25px;display:block;}
+.footer_quick a{color:#999;}
+.footer_hr{border-right-width:1px;border-right-style:solid;border-right-color:#2f2f2f;}
+.footer_code{width:140px; padding-left:80px;padding-right:79px;}
+.footer_code img{width:140px;height:140px;}
+.footer_code p{margin-top:10px;text-align:center;}
+.footer_stat{width:310px;margin-left:70px;}
+.footer_logo{width:240px;height:60px;overflow:hidden;}
+.footer_stat h5{color:#999;font-weight:bold;}
+.footer_stat h6{color:#fff;font-size:16px;margin-top:10px;}
+.footer_stat h2{color:#FFF;font-size:30px;margin-top:15px;}
+.footer_stat .lf{margin-right:40px;}
+.footer_copy{margin-top:20px;letter-spacing:1px;height:60px;line-height:60px;color:#FFF;background-color:#000;font-size:14px;text-align: center;}
+/**** 全站分页样式 ****/
+.page{padding:50px 0px;}
+.page ul{text-align:center;display:table;margin:0 auto;}
+.page li{float:left; width:40px;height:40px;border-radius:5px; background-color:#FFF; margin-right:10px; line-height:40px;color:#999;}
+.page li a{color:#999;font-size:14px;}
+#c1{background-color:#0076ff;}
+#c1 a{font-size:14px;color:#fff;}
+
+/** 登陆页面 **/
+.login{width:100%;height:100%;background-image: url(../images/login_bg.png);background-repeat: no-repeat;background-position: center top;min-height:1161px;}
+.login_logo{padding-left:7%;padding-top:5%;}
+.login_form{width:520px;height:700px;position:absolute;top:15%;right:10%;text-align: center;}
+.login_form h3{font-size:20px;margin-top:25px;margin-bottom:70px;color:#333;letter-spacing: 1px;}
+.login_input{background:#FFF;height:440px;border-radius: 8px;}
+.login_form p{font-size:12px;color:#999;margin-top:100px;}
+.login_sub{text-align:left;padding:45px 60px;box-sizing:border-box;}
+.login_sub h2{font-size:16px;color:#333;}
+.logininput{margin-top:45px;margin-bottom:45px;}
+.logininput input{height:50px;}
+.login_sub button{background-color:#ff0000;width:100%;height:52px;}
+.login_reg{font-size:14px;margin-top:30px;}
+.login_reg .lf{}
+.login_reg .rt{}
+.login_reg .rt li{float:left;color:#999; margin-right:8px;}
+.login_reg .rt li a{color:#999;}
+
+
+
+
+
+
+

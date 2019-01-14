@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>雇主发布任务</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/task.css" type="text/css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="./libs/webuploader/webuploader.css">-->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+<!-- 头部 -->
+<div class="header_top">
+    <div class="header clearfix">
+        <a href="" class="header_logo"><img src="images/logo.png"/></a>
+
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+            <li class="layui-nav-item"><a href="">项目</a></li>
+            <li class="layui-nav-item"><a href="">设计师</a></li>
+            <li class="layui-nav-item"><a href="">校友圈</a></li>
+            <li class="layui-nav-item"><a href="">专家库</a></li>
+            <li class="layui-nav-item"><a href="">资讯</a></li>
+            <li class="layui-nav-item"><a href="">教育</a></li>
+        </ul>
+
+
+        <div class="header_login clearfix">
+            <div class="lf header_so"><a href="javascript:;" onclick="header_so();"><i class="layui-icon"
+                                                                                       style="font-size: 20px;">&#xe615;</i></a>
+            </div>
+            <div class="lf">
+                  <span class="layui-breadcrumb" lay-separator="|">
+                       <a href="">登陆</a>
+                       <a href="">注册</a>
+                  </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 头部结束 -->
+
+<form class="layui-form">
+    <div class="add_task">
+        <div class="main add_title yuan">发布任务</div>
+
+        <!-- 表单详情 -->
+        <div class="main add_info yuan">
+            <h3>发布任务详情</h3>
+            <div class="add_type clearfix">
+                <ul>
+                    <li><i class="add_n1"></i>
+                        <p>选择交易模式</p></li>
+                    <li><i class="add_n2"></i>
+                        <p>描述任务需求</p></li>
+                    <li><i class="add_n3"></i>
+                        <p>核对交易清单</p></li>
+                    <li><i class="add_n4"></i>
+                        <p>成功发布任务</p></li>
+                </ul>
+            </div>
+
+            <div class="add_iden">竞标悬赏</div>
+
+            <div class="add_pd">
+
+                <div class="clearfix">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_ut"><input type="text" name="title" lay-verify="title" autocomplete="off"
+                                                  placeholder="请输入标题" class="layui-input"><em>30</em></div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+                <em class="ad_tx">精确的项目名称可以使用户快速查找</em>
+
+                <!-- 分类 -->
+                <div class="clearfix">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_ut ">
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline">
+                                <select name="quiz1">
+                                    <option value="">请选择项目分类</option>
+                                    <option value="浙江">浙江省</option>
+                                    <option value="你的工号">江西省</option>
+                                    <option value="你最喜欢的老师">福建省</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="quiz2">
+                                    <option value="">请选择项目二级分类</option>
+                                    <option value="杭州">杭州</option>
+                                    <option value="宁波">宁波</option>
+                                    <option value="温州">温州</option>
+                                    <option value="温州">台州</option>
+                                    <option value="温州">绍兴</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+                <em class="ad_tx"></em>
+
+                <!-- 城市 -->
+                <div class="clearfix">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_ut">
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline">
+                                <select name="quiz1">
+                                    <option value="">请选择省</option>
+                                    <option value="浙江">浙江省</option>
+                                    <option value="你的工号">江西省</option>
+                                    <option value="你最喜欢的老师">福建省</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="quiz2">
+                                    <option value="">请选择市</option>
+                                    <option value="杭州">杭州</option>
+                                    <option value="宁波">宁波</option>
+                                    <option value="温州">温州</option>
+                                    <option value="温州">台州</option>
+                                    <option value="温州">绍兴</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="quiz3">
+                                    <option value="">请选择县/区</option>
+                                    <option value="西湖区">西湖区</option>
+                                    <option value="余杭区">余杭区</option>
+                                    <option value="拱墅区">临安市</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+                <em class="ad_tx"></em>
+
+                <div class="clearfix">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_text"><textarea placeholder="请输入内容"
+                                                       class="layui-textarea"></textarea><em>120</em></div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+                <em class="ad_tx"></em>
+                <div class="clearfix">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_phone"><input type="text" name="title" lay-verify="title" autocomplete="off"
+                                                     placeholder="项目联系人电话" class="layui-input"></div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 表单详情 -->
+        <div class="main add_info yuan">
+            <h3>发布任务详情<em class="">好的需求描述，能够让设计师更容易理解您，尽快的帮您完成需求</em></h3>
+
+            <div class="add_pd">
+
+                <div class="clearfix add_news">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf inp_newstext">
+                      <!--百度编辑器-->
+                        <!-- 加载编辑器的容器 -->
+                        <script id="container" name="content" type="text/plain">
+好的需求描述，能够让设计师更容易理解您，尽快的帮您完成需求；<br>
+
+                            您可要参考下列描述，根据自己的需求选择填写：<br>
+
+                            (1).LOGO名称（需要设计的内容）：如：中国设计网 以这五个字为LOGO，需要图片加文字的LOGO<br>
+
+                            (2).设计对象介绍：如中国设计网是一个综合类型的设计UGC平台，主要为设计师提供有效传播和服务......<br>
+
+                            (3).设计风格：如简洁大气、科技感强、小清新、要有亲和力......<br>
+
+                            (4).设计色调：如蓝色、红色、黄色......<br>
+
+                            (5).设计尺寸：如210*285<br>
+
+                            (6).设计页数：如12页<br>
+
+                            (7).设计用途：如用于公司十周年对外宣传用......<br>
+
+                            (8).设计具体要求：如LOGO名称需中文、英文、拼音、图形......<br>
+                        </script>
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- 上传封面 -->
+        <div class="main add_info yuan">
+            <h3>上传封面<em class="">支持286像素*160像素，好的图片有助于项目的曝光度</em></h3>
+
+            <div class="add_pd">
+
+                <div class="clearfix add_news">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf add_pic">
+                        <div id="uploader-title-pic">
+                            <!--用来存放item-->
+                            <div class="upload-title-pic-back">
+                                <img src="./images/title_pic_03.jpg" alt="">
+                            </div>
+                            <div id="titlePic" class="title-wap"></div>
+                            <div id="uploadTitlePic">选择图片</div>
+                        </div>
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- 添加标签 -->
+        <div class="main add_info yuan">
+            <h3>添加标签<em class="">自选技能标签最多3个，添加标签可以把作品自动推荐给可能感兴趣的人</em></h3>
+
+            <div class="add_pd">
+
+                <div class="clearfix add_news">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf add_pic">
+                        <div class="jinsom-single-tag-form">
+                            <textarea id="add_tag_single_page" style="display: none;"></textarea>
+                            <div class="jinsom-tag-had-select clear"></div>
+                            <div class="jinsom-tag-no-select clear" style="margin-bottom: 50px;">
+                                <li>规划设计</li>
+                                <li>景观设计</li>
+                                <li>室内设计</li>
+                                <li>建筑设计</li>
+                                <li>软装设计</li>
+                                <li>服装设计</li>
+                                <li>家具设计</li>
+                                <li>广告设计</li>
+                                <li>包装设计</li>
+                                <li>图书设计</li>
+                                <li>展陈设计</li>
+                                <li>交通工具设计</li>
+                                <li>轻工产品设计</li>
+                                <li>机械设备设计</li>
+                                <li>品牌标志设计</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- 上传附件 -->
+        <div class="main add_info yuan">
+            <h3>上传附件<em class="">仅支持格式
+                ai/psd/pdf/doc/docx/xls/ppt/wps/zip/rar/txt/jpg/jpeg/gif/bmp/swf/png/lsp/mp3/stl/pptx</em></h3>
+
+            <div class="add_pd">
+
+                <div class="clearfix add_news">
+                    <div class="lf inp_bt"><i></i></div>
+                    <div class="lf ">
+                        <button type="button" class="layui-btn layui-btn-normal" id="testList">选择多文件</button>
+                        <button type="button" class="layui-btn" id="testListAction">开始上传</button>
+                        <div class="layui-upload-list">
+                            <table class="layui-table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody id="demoList"></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="rt clearfix">
+                        <div class="lf inp_tx"><i></i></div>
+                        <div class="lf inp_tx">必填项</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="task-but main">
+            <button class="task-btn-n1">发布</button>
+            <button class="task-btn-n2">预览</button>
+        </div>
+    </div>
+
+
+</form>
+<!-- 尾部 -->
+<div class="footer">
+    <div class="main clearfix">
+        <div class="lf footer_quick footer_hr">
+
+            <ul>
+                <b>企业服务</b>
+                <li><a href="">招标承办</a></li>
+                <li><a href="">作品投放</a></li>
+                <li><a href="">版权声明</a></li>
+                <li><a href="">隐私声明</a></li>
+            </ul>
+
+            <ul>
+                <b>交易保障</b>
+                <li><a href="">企业合作</a></li>
+                <li><a href="">交易保障</a></li>
+                <li><a href="">支付方式</a></li>
+                <li><a href="">备案管理</a></li>
+            </ul>
+
+            <ul>
+                <b>关注大咖</b>
+                <li><a href="">新浪微博</a></li>
+                <li><a href="">腾讯微博</a></li>
+                <li><a href="">论坛</a></li>
+                <li><a href="">社区</a></li>
+            </ul>
+
+            <ul>
+                <b>关于我们</b>
+                <li><a href="">关于十见网</a></li>
+                <li><a href="">平台公告</a></li>
+                <li><a href="">服务协议</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="lf footer_code footer_hr">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540457781332&di=41094991147c479c867598558c6cee27&imgtype=0&src=http%3A%2F%2Fimg.jiaodong.net%2Fpic%2F003%2F004%2F130%2F00300413046_2e324920.gif"/>
+            <p><b>微信订阅号</b></p>
+        </div>
+        <div class="rt footer_stat">
+            <div class="footer_logo"><img src="images/logo.png"/></div>
+            <div class="clearfix">
+                <div class="lf">
+                    <h5>成交项目</h5>
+                    <h6>68</h6>
+                </div>
+                <div class="lf">
+                    <h5>交易金额</h5>
+                    <h6>￥1476580元</h6>
+                </div>
+            </div>
+            <h2>400-921-7065</h2>
+        </div>
+    </div>
+    <div class="footer_copy">Copyright © 2018 上海越唐装饰设计工程有限公司 沪ICP备8888号</div>
+</div>
+<script type="text/javascript" src="layui/layui.all.js"></script>
+<!-- 百度编辑器配置文件 -->
+<script type="text/javascript" src="./libs/ueditor/ueditor.config.js"></script>
+<!-- 百度编辑器源码文件 -->
+<script type="text/javascript" src="./libs/ueditor/ueditor.all.min.js"></script>
+<script src="libs/webuploader/webuploader.html5only.min.js"></script>
+<script type="text/javascript">
+//    实例化百度编辑器
+    var ue = UE.getEditor('container');
+//    实例化上传封面图
+    var $list = $('.title-wap')//封面图展示容器
+    // 缩略图大小
+    var thumbnailWidth  = 286;
+    var thumbnailHeight = 160;
+    var uploaderTitlePic = new WebUploader.Uploader({
+        // 选完文件后，是否自动上传。
+        auto: true,
+        // 文件接收服务端。
+        server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#uploadTitlePic',
+
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/gif,image/jpg,image/jpeg,image/bmp,image/png'
+        }
+    });
+    // 当有文件添加进来的时候
+    uploaderTitlePic.on( 'fileQueued', function( file ) {
+    var $li = $(
+        '<div id="' + file.id + '" class="file-item thumbnail">' +
+        '<img>' +
+        '<div class="info">' + file.name + '</div>' +
+        '</div>'
+        ),
+        $img = $li.find('img');
+
+
+    // $list为容器jQuery实例
+    $list.append( $li );
+
+    // 创建缩略图
+    // 如果为非图片文件，可以不用调用此方法。
+    // thumbnailWidth x thumbnailHeight 为 100 x 100
+    uploaderTitlePic.makeThumb( file, function( error, src ) {
+        if ( error ) {
+            $img.replaceWith('<span>不能预览</span>');
+            return;
+        }
+
+        $img.attr( 'src', src );
+    }, thumbnailWidth, thumbnailHeight );
+});
+    // 文件上传过程中创建进度条实时显示。
+    uploaderTitlePic.on( 'uploadProgress', function( file, percentage ) {
+        var $li = $( '#'+file.id ),
+            $percent = $li.find('.progress span');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = $('<p class="progress"><span></span></p>')
+                .appendTo( $li )
+                .find('span');
+        }
+
+        $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploaderTitlePic.on( 'uploadSuccess', function( file ) {
+        $( '#'+file.id ).addClass('upload-state-done');
+    });
+
+    // 文件上传失败，显示上传出错。
+    uploaderTitlePic.on( 'uploadError', function( file ) {
+        var $li = $( '#'+file.id ),
+            $error = $li.find('div.error');
+
+        // 避免重复创建
+        if ( !$error.length ) {
+            $error = $('<div class="error"></div>').appendTo( $li );
+        }
+
+        $error.text('上传失败');
+    });
+
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploaderTitlePic.on( 'uploadComplete', function( file ) {
+        $( '#'+file.id ).find('.progress').remove();
+    });
+</script>
+<!--<script>-->
+    <!--//配置编辑器-->
+    <!--layui.use('layedit', function () {-->
+        <!--var layedit = layui.layedit;-->
+        <!--layedit.build('task_add', {-->
+            <!--height: 350,-->
+            <!--tool: ['face', '|', 'left', 'center', 'right', '|', 'strong', 'italic', 'underline', 'del']-->
+        <!--}); //建立编辑器-->
+    <!--});-->
+<!--</script>-->
+<script>
+    layui.use('upload', function () {
+        var $ = layui.jquery
+            , upload = layui.upload;
+
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#test1'
+            , url: '/upload/'
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo1').attr('src', result); //图片链接（base64）
+                });
+            }
+            , done: function (res) {
+                //如果上传失败
+                if (res.code > 0) {
+                    return layer.msg('上传失败');
+                }
+                //上传成功
+            }
+            , error: function () {
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function () {
+                    uploadInst.upload();
+                });
+            }
+        });
+
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            , url: '/upload/'
+            , multiple: true
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                //上传完毕
+            }
+        });
+
+        //指定允许上传的文件类型
+        upload.render({
+            elem: '#test3'
+            , url: '/upload/'
+            , accept: 'file' //普通文件
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+        upload.render({ //允许上传的文件后缀
+            elem: '#test4'
+            , url: '/upload/'
+            , accept: 'file' //普通文件
+            , exts: 'zip|rar|7z' //只允许上传压缩文件
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+        upload.render({
+            elem: '#test5'
+            , url: '/upload/'
+            , accept: 'video' //视频
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+        upload.render({
+            elem: '#test6'
+            , url: '/upload/'
+            , accept: 'audio' //音频
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+
+        //设定文件大小限制
+        upload.render({
+            elem: '#test7'
+            , url: '/upload/'
+            , size: 60 //限制文件大小，单位 KB
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+
+        //同时绑定多个元素，并将属性设定在元素上
+        upload.render({
+            elem: '.demoMore'
+            , before: function () {
+                layer.tips('接口地址：' + this.url, this.item, {tips: 1});
+            }
+            , done: function (res, index, upload) {
+                var item = this.item;
+                console.log(item); //获取当前触发上传的元素，layui 2.1.0 新增
+            }
+        })
+
+        //选完文件后不自动上传
+        upload.render({
+            elem: '#test8'
+            , url: '/upload/'
+            , auto: false
+            //,multiple: true
+            , bindAction: '#test9'
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+
+        //拖拽上传
+        upload.render({
+            elem: '#test10'
+            , url: '/upload/'
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+
+        //多文件列表示例
+        var demoListView = $('#demoList')
+            , uploadListIns = upload.render({
+            elem: '#testList'
+            , url: '/upload/'
+            , accept: 'file'
+            , multiple: true
+            , auto: false
+            , bindAction: '#testListAction'
+            , choose: function (obj) {
+                var files = this.files = obj.pushFile(); //将每次选择的文件追加到文件队列
+                //读取本地文件
+                obj.preview(function (index, file, result) {
+                    var tr = $(['<tr id="upload-' + index + '">'
+                        , '<td>' + file.name + '</td>'
+                        , '<td>' + (file.size / 1014).toFixed(1) + 'kb</td>'
+                        , '<td>等待上传</td>'
+                        , '<td>'
+                        , '<button class="layui-btn layui-btn-xs demo-reload layui-hide">重传</button>'
+                        , '<button class="layui-btn layui-btn-xs layui-btn-danger demo-delete">删除</button>'
+                        , '</td>'
+                        , '</tr>'].join(''));
+
+                    //单个重传
+                    tr.find('.demo-reload').on('click', function () {
+                        obj.upload(index, file);
+                    });
+
+                    //删除
+                    tr.find('.demo-delete').on('click', function () {
+                        delete files[index]; //删除对应的文件
+                        tr.remove();
+                        uploadListIns.config.elem.next()[0].value = ''; //清空 input file 值，以免删除后出现同名文件不可选
+                    });
+
+                    demoListView.append(tr);
+                });
+            }
+            , done: function (res, index, upload) {
+                if (res.code == 0) { //上传成功
+                    var tr = demoListView.find('tr#upload-' + index)
+                        , tds = tr.children();
+                    tds.eq(2).html('<span style="color: #5FB878;">上传成功</span>');
+                    tds.eq(3).html(''); //清空操作
+                    return delete this.files[index]; //删除文件队列已经上传成功的文件
+                }
+                this.error(index, upload);
+            }
+            , error: function (index, upload) {
+                var tr = demoListView.find('tr#upload-' + index)
+                    , tds = tr.children();
+                tds.eq(2).html('<span style="color: #FF5722;">上传失败</span>');
+                tds.eq(3).find('.demo-reload').removeClass('layui-hide'); //显示重传
+            }
+        });
+
+        //绑定原始文件域
+        upload.render({
+            elem: '#test20'
+            , url: '/upload/'
+            , done: function (res) {
+                console.log(res)
+            }
+        });
+
+    });
+
+
+    //添加标签（普通用户）
+    $(document).on('click', '.jinsom-tag-no-select li', function () {
+        if ($('.jinsom-tag-had-select li').length <= 2) {
+            $('.jinsom-tag-had-select').prepend($(this));
+            tags_html = $(this).html();
+            tags = $('#add_tag_single_page').val();
+            if (tags == '') {
+                $('#add_tag_single_page').val(tags_html);
+            } else {
+                $('#add_tag_single_page').val(tags + ',' + tags_html);
+            }
+
+
+            $(this).off("click");
+        } else {
+            layer.msg('最多只能添加3个标签！');
+            return false;
+        }
+    });
+    //点击取消标签
+    $(document).on('click', '.jinsom-tag-had-select li', function () {
+        $('.jinsom-tag-no-select').prepend($(this));
+        num = $('.jinsom-tag-had-select li').length;
+        if (num == 0) {
+            $('#add_tag_single_page').val('');
+        } else {
+            var tag_arr = [];
+            $('.jinsom-tag-had-select').find('li').each(function () {
+                tag_text = $(this).html();
+                tag_arr.push(tag_text);
+            });
+
+            tag_data = tag_arr.join(",");
+            $('#add_tag_single_page').val(tag_data);
+        }
+
+        $(this).off("click");
+    });
+
+</script>
+
+
+<!--协议开始-->
+<script>
+    $.ajax({
+        type: "POST",
+        url: "xieyi.html",
+        data: {pop_login_style: 1},
+        success: function (msg) {
+            setTimeout(function () {
+                layer.closeAll('loading');
+            });
+            layer.open({
+                title: '支持以下方式登录',
+                btn: false,
+                area: ['900px', '480px'],
+                skin: 'pop_login_style',
+                content: msg
+            })
+        }
+    });
+
+</script>
+<!--协议结束-->
+
+
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>

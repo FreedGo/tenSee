@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* 教育页 */
+
+.stu_header{width:100%;height:30px;margin:35px 0px;text-align:center;}
+.stu_so input{border: 1px solid #CCC;height:28px;width:200px;margin-top: -5px;border-radius: 8px;padding-left:5px;padding-right:40px;}
+input::-webkit-input-placeholder{color:#ccc; font-size:12px;}
+.user{margin-left:30px;margin-top:-5px;}
+#userpic img{width:30px; height:30px;border-radius:100px;}
+.stu_class{background-color:#f5f5f5;height:25px;line-height:25px;}
+.stu_class a{color:#999;font-size:12px;}
+.stu_class ul{width:1220px;overflow:hidden;}
+.stu_class li{margin-right:20px;float:left;}
+
+/*课程列表*/
+.stu_culum{ background-color:#f5f5f5;}
+.stu_culum_list{padding-bottom:50px;padding-top:50px;}
+.stu_culum_tname h2{font-size:26px;color:#333;margin-bottom:20px;}
+.stu_culum_tname h4{font-size:14px;color:#666;line-height:40px;}
+
+.stu_culum_list ul{padding:0px 5px;box-sizing:border-box;width:1230px;}
+.stu_culum_list li{border-radius:8px;margin-right:30px;float:left;background-color:#FFF;height:287px;width:275px; overflow:hidden; margin-bottom:30px;}
+.stu_culum_list a{ display:block;}
+.stu_culum_list img{width:275px; height:150px;}
+.stu_culum_list span{color:#FFF;position: relative;display:block;left:225px;top: -22px;width:50px;background-color:#4c4700;font-size:12px;height:22px;line-height:22px;text-align: center;}
+.stu_culum_list h3{font-size:18px; color:#333;line-height:24px;}
+.stu_culum_list h5{font-size:14px; color:#999;margin-top: 5px;margin-bottom: 10px;}
+.stu_culum_list_w{padding:0px 10px 20px 10px;box-sizing: border-box;}
+.stu_culum_list_num{ font-size:12px; color:#999;}
+.c1{background-image: url(../images/onclick.png);background-repeat: no-repeat;height:11px;width:14px;display:block;float:left;margin-right:5px;margin-top:3px;}
+.c2{background-image: url(../images/play.png);background-repeat: no-repeat;height:11px;width:14px;display:block;float:left;margin-right:5px;margin-top:3px;}
+
+.stu{background-color:#FFF; padding-top:40px;}
+.stu_list{padding-left:5px;padding-right:5px;box-sizing: border-box; margin-bottom:30px;}
+.stu_list_lf{width:180px;height:320px;background-color:#c20900;margin-right:30px;color:#FFF;}
+.stu_list_lf h3{font-size:20px;margin-top:30px;color:#FFF;text-align: center;}
+.stu_list_lf a{color:#FFF;}
+.stu_list_lf ul{padding:30px;}
+.stu_list_lf li{ margin-bottom:15px;}
+.stu_list_lf p{text-align: center;position: relative;bottom: -40px;}
+.stu_list_rt{width:860px;overflow:hidden;}
+.stu_isgood{width:380px;}
+.stu_isgood img{width:380px;height:270px;border-radius: 8px;}
+.stu_isgood span{color:#FFF;position:relative;display:block;left:330px;top:-22px;width:50px;background-color:#4c4700;font-size: 12px;height:22px;line-height:22px;text-align: center;border-bottom-right-radius:8px;}
+.stu_isgood h3{color:#333;font-size:16px;margin-top:-15px;margin-bottom:5px;}
+.stu_isgood_list{}
+.stu_isgood_list ul{overflow:hidden; width:600px;}
+.stu_isgood_list li{width:180px;height:150px;margin-bottom:20px; margin-left:20px; float:left;}
+.stu_isgood_list img{border-radius: 8px;width:180px;height:100px;}
+.stu_isgood_list h3{color:#333; font-size:16px;margin-top:-15px;margin-bottom:5px;}
+.stu_isgood_list span{color:#FFF;position:relative;display:block;left:130px;top:-22px;width:50px;background-color:#4c4700;font-size:12px;height:22px;line-height:22px;text-align:center;border-bottom-right-radius:8px;}
+#sty_clo1{background-color:#ee964b;}
+#sty_clo1 ul{padding-bottom:0px;}
+#sty_clo1 li{float:left; width:50%;}
+#sty_clo1 p{bottom: -10px;}
+#sty_clo2{background-color:#28afb0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
