@@ -190,10 +190,43 @@ margin-bottom:20px;
 	background-color: red;
 	top:0;
 }
-
-
-
-
+/*第二页*/
+.input-group-one{
+	width: 300px;
+}
+.input-group-one .inp_ut{
+	width: auto;
+}
+.input-group-one .inp_ut input{
+	width: 200px;
+}
+.money-group .ad_tx{ padding-left: 24px}
+.money-group .input-group-title{
+	font-size: 14px;
+	line-height: 30px;
+	color: #999;
+	padding-left: 24px;
+}
+.time-warp{
+	font-size: 12px;
+}
+.time-warp .layui-form-label{
+	width: 130px;
+	text-align: center;
+	line-height:26px;
+}
+.time-warp .date-icon{
+	position: absolute;
+	right: 22px;
+	top: 11px;
+	font-size: 22px;
+}
+.time-warp .bulid-date{
+	border-radius: 23px;
+	background-color: #FFF9EE;
+	font-size: 14px;
+	padding-left: 20px;
+}
 
 
 
