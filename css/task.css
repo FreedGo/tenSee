@@ -227,17 +227,195 @@ margin-bottom:20px;
 	font-size: 14px;
 	padding-left: 20px;
 }
+.time-warp .time-chose{
+	width:300px;
+}
+.time-group{
+	height:auto;
+}
+ .time-color2  .bulid-date{
+	 background-color: #EDEBEB;
+ }
+.time-color3  .bulid-date{
+	background-color: #EEEFF0;
+}
+.time-color4  .bulid-date{
+	 background-color: #EEFFFF;
+ }
+.time-color5  .bulid-date{
+	background-color: #FFFAF6;
+}
+.time-color6  .bulid-date{
+	 background-color: #EDEBEB;
+ }
+.time-color1{color:#BBAD92}
+.time-color2{color:#5C4D4E}
+.time-color3{color:#475764}
+.time-color4{color:#19A4C0}
+.time-color5{color:#FE8127}
+.time-color6{color:#524243}
+.layui-input.three-money{
+	padding-left: 34px;
+	position: relative;
+}
 
+.inp_ut{
+	position: relative;
+}
+.money-icon{
+	position: absolute;
+	left: 14px;
+	top:0;
+	width: 20px;
+	height: 46px;
+	line-height: 46px;
+	z-index: 100;
 
+}
 
+/*第三页*/
+.title-info{
+	padding-left: 20px;
+	font-size: 14px;
+	color: #ccc;
+}
+.task-title-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	border:#ccc 1px ;
+	border-style: solid;
+	margin-left: 80px;
+}
+.task-title-img img{
+	width: 100px;
+	height: 100px;
+}
+.title-detail-info{
+	margin-left: 30px;
+}
+.title-text{
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+.title-money-title{
+	font-size: 12px;
+	line-height: 24px;
+	color: #fff;
+	background: #EF5050;
+	padding: 0 10px;
+	display: inline-block;
+	height: 24px;
+}
+.title-money-title-num{
+	font-size: 12px;
+	line-height: 24px;
+	border: solid 1px #EF5050;
+	color: #EF5050;
+	padding: 0 10px;
+	display: inline-block;
+	height: 22px;
+}
+.title-time{
+	margin-left: 66px;
+	color: #999;
+	font-size: 12px;
+	line-height: 24px;
+}
+.title-time-title-num{
+	color: #F04444;
+}
+.title-percent{
+	margin-left: 66px;
+	color: #999;
+	font-size: 12px;
+	line-height: 24px;
+}
+.task-item{
+	margin-top: 10px;
+}
+.task-item .add_iden{
+	margin-bottom: 20px;
+}
+.task-dec-info{
+	margin-left: 80px;
+	width:;
+	color: #ABABAB;
+}
+.file-down{
+	margin-right: 80px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.jineng{
+	margin-left: 80px;
+	padding-bottom: 30px;
+}
+.time-line{
+	padding: 10px 0 0;
+	background-color: #F5F5F5;
+	/*height: 140px;*/
+	position: relative;
+}
+.time-line-commom{
+	padding: 10px 0 0;
+	background-color: #F5F5F5;
+	height: auto;
+	position: relative;
+}
+.time-line-inner{
+	background-color: #fff;
+	height: 120px;
+	position: relative;
+}
+.time-line-common-inner{
+	background-color: #fff;
+	/*height: 120px;*/
+	position: relative;
+}
+.blue-line{
+	height: 3px;
+	background-color: #28AFB0;
+	position: absolute;
+	top:30px;
+	width:100%;
+}
+.line-group{
+	width:100%;
+	position: relative;
+	top:21px;
+	display: flex;
 
+}
+.line-item{
+	width:80px;
+	text-align: center;
+	background: url(../images/images/right-icon_03.jpg) top center no-repeat;
+	padding-top: 20px;
+	flex: auto;
+}
+.line-item  div{
+	color: #999;
+	line-height: 24px;
 
-
-
-
-
-
-
+}
+.add_pd-title{
+	font-size:20px ;
+	padding-left: 24px;
+	line-height: 54px;
+	height: 54px;
+	border-bottom: #ccc solid 1px;
+	background-color: #fff;
+}
+.money-list{
+	padding-top: 30px;
+	margin-left: 50px;
+	line-height: 30px;
+	font-size: 14px;
+}
 
 
 

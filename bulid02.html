@@ -66,38 +66,42 @@
                 <!--三个价格-->
                 <div class="money-group clearfix">
                     <div class="lf inp_bt"><i></i></div>
-                    <div class="input-group-one lf">
+                    <div class="input-group-one  lf">
                         <h6 class="input-group-title">项目标的</h6>
                         <div class="clearfix">
                             <div class="lf inp_ut">
-                                <input type="text" name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入标题" class="layui-input"></div>
+                                <span class="money-icon">¥</span>
+                                <input type="text"  name="title" lay-verify="title" autocomplete="off"
+                                       placeholder="请输入金额" class="layui-input three-money"></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
                             <!--</div>-->
                         </div>
-                        <em class="ad_tx">精确的项目名称可以使用户快速查找</em>
+                        <em class="ad_tx">项目标的费用</em>
                     </div>
                     <div class="input-group-one lf">
-                        <h6 class="input-group-title">项目标的</h6>
+                        <h6 class="input-group-title">比稿补偿费</h6>
                         <div class="clearfix">
                             <div class="lf inp_ut">
+                                <span class="money-icon">¥</span>
                                 <input type="text" name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入标题" class="layui-input"></div>
+                                       placeholder="请输入金额" class="layui-input three-money"></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
                             <!--</div>-->
                         </div>
-                        <em class="ad_tx">精确的项目名称可以使用户快速查找</em>
+                        <em class="ad_tx">比稿补偿费是项目费用的10%</em>
                     </div>
                     <div class="input-group-one lf">
-                        <h6 class="input-group-title">项目标的</h6>
+                        <h6 class="input-group-title">项目总金额</h6>
                         <div class="clearfix">
                             <div class="lf inp_ut">
+                                <span class="money-icon">¥</span>
+
                                 <input type="text" name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入标题" class="layui-input"></div>
+                                       placeholder="请输入金额" class="layui-input three-money"></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
@@ -114,12 +118,62 @@
                 <!-- 时间选择 -->
                 <div class="clearfix">
                     <div class="lf inp_bt"><i></i></div>
-                    <div class="lf inp_ut ">
+                    <div class="lf inp_ut time-group">
                         <div class="layui-form-item time-warp time-color1">
                             <div class="layui-inline">
                                 <label class="layui-form-label">项目报名截止时间</label>
-                                <div class="layui-input-inline">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate01"  placeholder="yyyy-MM-dd">
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate01"  placeholder="">
+                                    <i class="layui-icon date-icon">&#xe637;</i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item time-warp time-color2">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">项目投标截止时间</label>
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate02"  placeholder="">
+                                    <i class="layui-icon date-icon">&#xe637;</i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item time-warp time-color3">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">深化方案截止时间</label>
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate03"  placeholder="">
+                                    <i class="layui-icon date-icon">&#xe637;</i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item time-warp time-color4">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">技术初扩截止时间</label>
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate04"  placeholder="">
+                                    <i class="layui-icon date-icon">&#xe637;</i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item time-warp time-color5">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">最终成果截止时间</label>
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate05"  placeholder="">
+                                    <i class="layui-icon date-icon">&#xe637;</i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item time-warp time-color6">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">项目完成截止时间</label>
+                                <div class="layui-input-inline time-chose">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate06"  placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -212,9 +266,15 @@
             ,form = layui.form
             ,laydate = layui.laydate;
 
-        laydate.render({
-            elem: '#buildDate01'
-        });
+        for (var i =1;i<=6;i++){
+            laydate.render({
+                elem: '#buildDate0'+i,
+                type:'datetime',
+                format:'yyyy-MM-dd HH:mm',
+                value:new Date()
+            });
+        }
+
     });
 </script>
 </body>
