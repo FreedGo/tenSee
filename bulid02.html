@@ -43,7 +43,7 @@
 <form class="layui-form">
     <div class="add_task">
         <div class="main add_title yuan">发布任务</div>
-
+        <form class="layui-form">
         <!-- 表单详情 -->
         <div class="main add_info yuan">
             <h3>发布任务详情</h3>
@@ -71,8 +71,8 @@
                         <div class="clearfix">
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
-                                <input type="text"  name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入金额" class="layui-input three-money"></div>
+                                <input type="number"  name="title" lay-verify="number" autocomplete="off"
+                                       placeholder="请输入金额" class="layui-input three-money three-money-one" value=""></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
@@ -85,8 +85,8 @@
                         <div class="clearfix">
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
-                                <input type="text" name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入金额" class="layui-input three-money"></div>
+                                <input type="number" name="title" lay-verify="number" autocomplete="off"
+                                       placeholder="请输入金额" class="layui-input three-money three-money-two" value=""></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
@@ -100,8 +100,8 @@
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
 
-                                <input type="text" name="title" lay-verify="title" autocomplete="off"
-                                       placeholder="请输入金额" class="layui-input three-money"></div>
+                                <input type="number" name="title" lay-verify="number" autocomplete="off"
+                                       placeholder="请输入金额" class="layui-input three-money three-money-three" value="0"></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
                             <!--<div class="lf inp_tx">必填项</div>-->
@@ -195,6 +195,7 @@
             <button class="task-btn-n1">发布</button>
             <button class="task-btn-n2">预览</button>
         </div>
+        </form>
     </div>
 
 
@@ -265,16 +266,42 @@
         var layer = layui.layer
             ,form = layui.form
             ,laydate = layui.laydate;
-
+//        6个时间选择器 的处理
+        var currentTimeStamp = new Date();
+        currentTimeStamp = currentTimeStamp.getTime();
         for (var i =1;i<=6;i++){
+//            给每个时间选择器绑定事件
             laydate.render({
                 elem: '#buildDate0'+i,
                 type:'datetime',
                 format:'yyyy-MM-dd HH:mm',
-                value:new Date()
+                value:new Date(currentTimeStamp+86400000*i),
+                done: function(value, date, endDate){
+                    console.log(value); //得到日期生成的值，如：2017-08-18
+                    console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+                    var self = this;
+                    var dateNum = self.elem.attr('lay-key');
+//                    当前时间
+                    var currentDateNum =value.replace(/\-|\ |\:/g,'');
+//                    上一个时间
+                        beforeDateNum = $('#buildDate0'+(dateNum-1)).val().replace(/\-|\ |\:/g,'');
+                        if(dateNum>1&&beforeDateNum>=currentDateNum){
+                            layer.alert('当前选择时间小于上一阶段时间,请重新选择')
+                        }
+                }
             });
         }
-
+//        第一个数字加第二个价格 为第三个价格
+        $('.three-money-one').on('blur',function () {
+            var price1 = $(this).val()-0;
+            var price2 = $('.three-money-two').val()-0;
+            $('.three-money-three').val(price1+price2)
+        })
+        $('.three-money-two').on('blur',function () {
+            var price1 = $(this).val()-0;
+            var price2 = $('.three-money-one').val()-0;
+            $('.three-money-three').val(price1+price2)
+        })
     });
 </script>
 </body>
