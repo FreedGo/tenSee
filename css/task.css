@@ -1,5 +1,7 @@
 @charset "utf-8";
 /*** 游客&&未报名 ***/
+.rf{
+	float: right;}
 .cdg_120{margin-bottom:20px;}
 .yuan{border-radius:8px;}
 .task{background-color:#f5f5f5;padding:20px 0px;}
@@ -416,12 +418,56 @@ margin-bottom:20px;
 	line-height: 30px;
 	font-size: 14px;
 }
+.server-change{
+	margin-left: 30px;
+}
+.service{
+	padding-top: 30px;
+	height: 48px;
+	font-size: 14px;
+	line-height:24px;
 
-
-
-
-
-
+}
+.service-img{
+	margin-left: 20px;
+}
+.service-img .ding{
+	font-size: 24px;
+	line-height: 48px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #FF5722;
+	border-radius: 24px;
+	display: inline-block;
+	width: 48px;
+	text-align: center;
+}
+.service-title{
+	margin-left: 20px;
+}
+.service-title p{
+	color: #999;
+}
+.serive-num{
+	margin-right: 30px;
+}
+.serive-num .layui-input-inline{
+	width:60px;
+	text-align: center;
+}
+.service-price{
+	line-height: 38px;
+	font-size: 14px;
+	color: red;
+	margin-left: 20px;
+}
+.service2 .service-img .ding{
+	background-color: #7AAA34;
+}
+.service-fast{
+	line-height:38px;
+	font-size: 14px;
+}
 
 
 
