@@ -283,11 +283,14 @@
                     var dateNum = self.elem.attr('lay-key');
 //                    当前时间
                     var currentDateNum =value.replace(/\-|\ |\:/g,'');
-//                    上一个时间
+                    if(dateNum>1){
+//                        上一个时间
                         beforeDateNum = $('#buildDate0'+(dateNum-1)).val().replace(/\-|\ |\:/g,'');
                         if(dateNum>1&&beforeDateNum>=currentDateNum){
                             layer.alert('当前选择时间小于上一阶段时间,请重新选择')
                         }
+                    }
+//
                 }
             });
         }
