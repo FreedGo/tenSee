@@ -1,0 +1,78 @@
+<?php
+    $cid = $GLOBALS['navclassid'];
+?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>[!--pagetitle--]</title>
+    <meta name="keywords" content="[!--pagekey--]" />
+    <meta name="description" content="[!--pagedes--]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="/d/css/common.css">
+    <link href="/d/css/zixun.css" rel="stylesheet">
+    <style type="text/css">
+        .zixun-list-wrapper{
+            width: 1200px;
+        }
+        .zixun-item{
+            border-bottom: dashed 1px #ccc;
+        }
+        .zixun-cat-tabs > li{
+            width: auto;
+        }
+        .zixun-cat-tabs > li a{
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+[!--temp.header--]  
+<div id="p0" data-pjax-container="" data-pjax-push-state data-pjax-timeout="1000">
+        <div class="banner-slider-wrapper">
+            <div class="banner-slider-inner">
+                <div id="bannerSlider" class="banner-slider-list clearfix">
+                     <img src="/d/images/news_bg.jpg" alt="">
+                </div>
+                <div class="banner-dots-wrapper">
+                    <div id="bannerSliderPage" class="slider-dots"></div>
+                </div>
+                <div class="banner-slider-actions">
+                     <a href="/site/signin" data-pjax="0" class="btn btn-primary btn-capsule"><i class="icon-add-w"></i> 发布需求</a>
+                     <a href="/site/signin" data-pjax="0" class="btn btn-primary btn-capsule"><i class="icon-flag"></i> 入驻平台</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="main">
+                <div class="zixun-wrapper clearfix">
+                    <div class="zixun-list-wrapper">
+                        <ul class="zixun-cat-tabs clearfix">
+                            <li class="<?php if($cid==9){echo "active";}?>">
+                                <a href="/e/action/ListInfo/?classid=6" data-tab="1">保险资讯</a>
+                            </li>
+                            <li class="<?php if($cid==7){echo "active";}?>">
+                                <a href="/e/action/ListInfo/?classid=7" data-tab="2">互联网资讯</a>
+                            </li>
+                            
+                        </ul>
+                        <div class="zixun-panes">
+                            <div class="zixun-pane active" data-tab="1">
+                            [!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+                        </div>
+                        </div>
+                        <!-- 分页 -->
+                        <div class="pagination"><ul class="pagination">[!--show.listpage--]</ul></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+[!--temp.footer--]
+</body>
+</html>

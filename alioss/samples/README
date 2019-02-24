@@ -1,0 +1,42 @@
+阿里云计算开放服务软件开发工具包PHP版
+Aliyun MTS SDK for PHP
+
+版权所有 （C）阿里云计算有限公司
+
+Copyright (C) Alibaba Cloud Computing
+All rights reserved.
+
+http://www.aliyun.com
+
+1. 环境要求：
+  PHP 5.3+
+  composer
+
+2. 安装依赖库
+    从Github上下载PHP SDK的源代码：https://github.com/aliyun/aliyun-openapi-php-sdk
+    拷贝aliyun-php-sdk-core文件夹和aliyun-php-sdk-mts的文件夹到项目根目录
+    编辑aliyun-php-sdk-core/Config.php：
+        在这行“//config sdk auto load path.”下面添加内容:
+        Autoloader::addAutoloadPath("aliyun-php-sdk-mts");
+    composer install
+
+3. 设置全局变量
+   编辑main.php
+   把阿里云的accessKey、以及OSS的bucket、和MTS的管道ID/转码模板ID/水印模板ID等替换占位的空白参数。
+
+4. 多区域支持
+   编辑aliyun-php-sdk-core/Regions/EndpointConfig.php。
+     //例如需要同时支持杭州和北京区域，默认杭州区域，其他区域和北京类似方式增加。
+     $regionIds = array("cn-hangzhou");
+     $productDomains =array(
+         new ProductDomain("Mts", "mts.cn-hangzhou.aliyuncs.com")
+         );
+     $endpoint = new Endpoint("cn-hangzhou", $regionIds, $productDomains);
+     $endpoints = array($endpoint);
+     //其他区域和北京类似方式增加即可
+     $endpoints[] = new Endpoint(
+                          "cn-beijing",
+                          array("cn-beijing"),
+                          array(new ProductDomain("Mts", "mts.cn-beijing.aliyuncs.com")));
+
+     EndpointProvider::setEndpoints($endpoints);

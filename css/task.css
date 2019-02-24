@@ -395,7 +395,7 @@ margin-bottom:20px;
 .line-item{
 	width:80px;
 	text-align: center;
-	background: url(../images/images/right-icon_03.jpg) top center no-repeat;
+	background: url(../images/right-icon_03.jpg) top center no-repeat;
 	padding-top: 20px;
 	flex: auto;
 }
@@ -468,7 +468,17 @@ margin-bottom:20px;
 	line-height:38px;
 	font-size: 14px;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+.service-fast-date,.service-fast-price {
+	line-height: 24px;
+	padding: 0 5px;
+	height: 24px;
+	border: #ccc solid 1px
+}
 
 
 

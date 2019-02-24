@@ -1,0 +1,288 @@
+[30-Dec-2016 06:26:15 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(133): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(102): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(93): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(264): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 06:29:55 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(133): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(102): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(93): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(264): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 06:40:56 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 06:45:21 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(137): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(106): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(97): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(268): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 06:53:00 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 06:54:57 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 07:01:41 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:110
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 110
+
+[30-Dec-2016 07:11:19 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:110
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 110
+
+[30-Dec-2016 07:45:54 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The location "Input:Location" is invalid. A location name should be one of five:oss-cn-hangzhou,oss-cn-shanghai,oss-cn-beijing,oss-us-west-1,oss-cn-shenzhen' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:112
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 112
+
+[30-Dec-2016 07:52:59 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The resource operated "PipelineId" cannot be found' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:112
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(135): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(104): submit_analysis_job(Array, '29d0483e90fb4c4...')
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 112
+
+[30-Dec-2016 08:08:46 GMT] PHP Notice:  Undefined property: stdClass::$JobId in E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php on line 210
+
+[30-Dec-2016 08:08:46 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The specified parameter "JobIds" is not valid.' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:112
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(223): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\QueryJobListRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(116): wait_transcode_job_complete(NULL)
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(266): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 112
+
+[30-Dec-2016 08:32:25 GMT] PHP Notice:  Undefined property: stdClass::$JobId in E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php on line 212
+
+[30-Dec-2016 08:32:26 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The specified parameter "JobIds" is not valid.' in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:112
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(37): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(225): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\QueryJobListRequest))
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(116): wait_transcode_job_complete(NULL)
+#3 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(95): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(268): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 112
+
+[30-Dec-2016 17:27:34 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'OSS\Core\OssException' with message 'file path is invalid' in E:\wamp\www\free99.com.tw\alioss\src\OSS\Core\OssUtil.php:212
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\src\OSS\OssClient.php(1017): OSS\Core\OssUtil::throwOssExceptionWithMessageIfEmpty('', 'file path is in...')
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(47): OSS\OssClient->uploadFile('mevideo', 'watermarks/5866...', '')
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(265): upload_file('', 'mevideo', 'watermarks/5866...')
+#3 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\src\OSS\Core\OssUtil.php on line 212
+
+[30-Dec-2016 17:28:49 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'OSS\Core\OssException' with message 'file path is invalid' in E:\wamp\www\free99.com.tw\alioss\src\OSS\Core\OssUtil.php:212
+Stack trace:
+#0 E:\wamp\www\free99.com.tw\alioss\src\OSS\OssClient.php(1017): OSS\Core\OssUtil::throwOssExceptionWithMessageIfEmpty('', 'file path is in...')
+#1 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(47): OSS\OssClient->uploadFile('mevideo', 'watermarks/5866...', '')
+#2 E:\wamp\www\free99.com.tw\alioss\mts-demo-php\main.php(265): upload_file('', 'mevideo', 'watermarks/5866...')
+#3 {main}
+  thrown in E:\wamp\www\free99.com.tw\alioss\src\OSS\Core\OssUtil.php on line 212
+
+[30-Dec-2016 13:20:00 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The specified parameter "Input:Object" can not be empty' in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(152): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(115): submit_analysis_job(Array, '2acf0b2c88594d9...')
+#3 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(106): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(269): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[30-Dec-2016 13:20:02 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'The specified parameter "Input:Object" can not be empty' in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php:108
+Stack trace:
+#0 E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(35): DefaultAcsClient->buildApiException(Object(stdClass), 400)
+#1 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(152): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#2 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(115): submit_analysis_job(Array, '2acf0b2c88594d9...')
+#3 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(106): system_template_job_flow(Array, Array)
+#4 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(269): transcode_job_flow(Array, Array)
+#5 {main}
+  thrown in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php on line 108
+
+[31-Dec-2016 11:35:36 GMT] PHP Fatal error:  Uncaught exception 'ClientException' with message 'Speicified endpoint or uri is not valid.' in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\Http\HttpHelper.php:61
+Stack trace:
+#0 E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(65): HttpHelper::curl('http://mts.cn-h...', 'GET', NULL, Array)
+#1 E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\DefaultAcsClient.php(31): DefaultAcsClient->doAction(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest), NULL, NULL, true, 3)
+#2 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(154): DefaultAcsClient->getAcsResponse(Object(Mts\Request\V20140618\SubmitAnalysisJobRequest))
+#3 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(117): submit_analysis_job(Array, '2acf0b2c88594d9...')
+#4 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(108): system_template_job_flow(Array, Array, NULL)
+#5 E:\wamp\www\xmdaoyi.com\alioss\samples\zhuanma.php(271): transcode_job_flow(Array, Array, NULL)
+#6 {main}
+  thrown in E:\wamp\www\xmdaoyi.com\alioss\aliyun-php-sdk-core\Http\HttpHelper.php on line 61
+
+[09-Jan-2017 02:13:00 GMT] PHP Notice:  Trying to get property of non-object in D:\WWW\zjk\alioss\samples\zhuanma.php on line 128
+
+[09-Jan-2017 02:13:00 GMT] PHP Notice:  Trying to get property of non-object in D:\WWW\zjk\alioss\samples\zhuanma.php on line 128
+
+[09-Jan-2017 02:13:00 GMT] PHP Notice:  Trying to get property of non-object in D:\WWW\zjk\alioss\samples\zhuanma.php on line 128
+
+[13-Feb-2017 05:36:22 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[14-Feb-2017 03:26:35 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[14-Feb-2017 07:56:39 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[14-Feb-2017 09:28:44 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:26:14 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:33:05 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:36:11 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:38:57 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:40:56 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 02:45:51 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 03:00:25 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 03:10:29 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 03:25:10 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 03:44:28 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 03:53:45 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 04:01:42 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 06:50:28 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:03:08 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:04:24 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:05:30 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:06:33 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:07:56 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:09:37 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:10:33 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:12:50 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:14:10 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:15:29 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:16:42 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[15-Feb-2017 10:18:05 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[16-Feb-2017 07:28:11 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[16-Feb-2017 07:30:51 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[16-Feb-2017 07:38:55 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[16-Feb-2017 07:42:20 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[16-Feb-2017 07:43:27 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[17-Feb-2017 05:51:45 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[20-Feb-2017 07:45:58 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[22-Feb-2017 00:21:20 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[23-Feb-2017 01:46:24 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[23-Feb-2017 04:27:46 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[23-Feb-2017 09:57:03 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 05:14:35 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 05:15:54 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 05:17:48 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 05:47:09 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 05:53:58 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[27-Feb-2017 06:17:38 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 01:21:49 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 05:44:34 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 05:46:09 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 05:49:51 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 05:50:41 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 05:58:50 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:01:50 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:03:14 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:04:22 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:05:46 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:06:51 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:08:30 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:10:01 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:11:14 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:13:39 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:15:11 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:33:50 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:41:27 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 06:42:44 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 07:01:24 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 07:06:26 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 07:10:02 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[28-Feb-2017 08:10:30 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 02:03:37 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 02:18:25 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 02:26:22 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 04:55:22 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 04:55:32 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 04:57:25 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 04:57:35 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 05:02:11 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 05:03:37 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 06:55:09 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 06:55:14 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 06:57:22 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[01-Mar-2017 07:56:05 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[04-Mar-2017 09:41:19 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 02:33:29 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 08:06:27 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 08:19:35 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 08:25:15 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 09:01:45 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[06-Mar-2017 09:03:18 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 05:45:47 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:31:51 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:34:53 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:36:07 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:39:12 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:47:28 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:53:06 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:53:24 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 06:56:54 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:01:09 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:02:57 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:05:29 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:05:34 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:08:08 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:08:20 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:17:46 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:28:57 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:35:01 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:44:44 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:46:34 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[07-Mar-2017 07:46:58 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
+[08-Mar-2017 02:22:44 GMT] PHP Notice:  Undefined offset: 10 in /alidata/www/hao3.0/zjk/alioss/samples/zhuanma.php on line 125
