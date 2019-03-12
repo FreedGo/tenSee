@@ -11,7 +11,6 @@ if(!defined('InEmpireCMS'))
     <title>雇主发布任务</title>
     <link href="/css/style.css" type="text/css" rel="stylesheet">
     <link href="/css/task.css" type="text/css" rel="stylesheet">
-    <link href="/css/uploader.css" type="text/css" rel="stylesheet">
     <!--<link rel="stylesheet" href="./libs/webuploader/webuploader.css">-->
     <script src="/js/jquery.js"></script>
 </head>
@@ -216,13 +215,6 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div id="titlePic" class="title-wap"></div>
                             <div id="uploadTitlePic">选择图片</div>
                         </div>
-                        <div id="ossfile"></div>
-                        <div id="container">
-                            <a id="selectfiles" href="javascript:void(0);" class='btn'>选择文件</a>
-                                <a id="postfiles" href="javascript:void(0);" class='btn'>开始上传</a>
-
-                            <!-- <a id="postfiles" href="javascript:void(0);" class='btn'>开始上传</a> -->
-                        </div>
                     </div>
                     <div class="rt clearfix">
                         <div class="lf inp_tx"><i></i></div>
@@ -287,21 +279,20 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                 <div class="clearfix add_news">
                     <div class="lf inp_bt"><i></i></div>
                     <div class="lf ">
-                        <button type="button" class="layui-btn layui-btn-normal" id="testList">选择多文件</button>
-                        <button type="button" class="layui-btn" id="testListAction">开始上传</button>
-                        <div class="layui-upload-list">
-                            <table class="layui-table">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody id="demoList"></tbody>
-                            </table>
+                    
+                    	<link rel="stylesheet" type="text/css" href="/e/extend/ossuploader/style.css"/>
+                        <div id="ossfile">你的浏览器不支持flash,Silverlight或者HTML5！</div>
+                        <div id="container">
+                            <a id="selectfiles" href="javascript:void(0);" class='btn'>选择文件</a>
+                            <a id="postfiles" href="javascript:void(0);" class='btn'>开始上传</a>
                         </div>
+                        <pre id="console"></pre>
+                        <script type="text/javascript" src="/e/extend/ossuploader/lib/crypto1/crypto/crypto.js"></script>
+						<script type="text/javascript" src="/e/extend/ossuploader/lib/crypto1/hmac/hmac.js"></script>
+                        <script type="text/javascript" src="/e/extend/ossuploader/lib/crypto1/sha1/sha1.js"></script>
+                        <script type="text/javascript" src="/e/extend/ossuploader/lib/base64.js"></script>
+                        <script type="text/javascript" src="/e/extend/ossuploader/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+                        <script type="text/javascript" src="/e/extend/ossuploader/upload.js"></script>
 
                     </div>
                     <div class="rt clearfix">
@@ -332,22 +323,101 @@ require(ECMS_PATH.'e/template/public/footer.php');
 <script type="text/javascript" src="/e/extend/ueditor/ueditor.config.js"></script>
 <!-- 百度编辑器源码文件 -->
 <script type="text/javascript" src="/e/extend/ueditor/ueditor.all.min.js"></script>
+<script src="/e/extend/webuploader/webuploader.html5only.min.js"></script>
 <script src="/js/area_data.js"></script>
 <script type="text/javascript">
 //    实例化百度编辑器
     var ue = UE.getEditor('container');
- 
+//    实例化上传封面图--------------------------------------------------------------------------
+    var $list = $('.title-wap')//封面图展示容器
+    // 缩略图大小
+    var thumbnailWidth  = 286;
+    var thumbnailHeight = 160;
+    var uploaderTitlePic = new WebUploader.Uploader({
+        // 选完文件后，是否自动上传。
+        auto: true,
+        // 文件接收服务端。
+        server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#uploadTitlePic',
+
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/gif,image/jpg,image/jpeg,image/bmp,image/png'
+        }
+    });
+    // 当有文件添加进来的时候
+    uploaderTitlePic.on( 'fileQueued', function( file ) {
+    var $li = $(
+        '<div id="' + file.id + '" class="file-item thumbnail">' +
+        '<img>' +
+        '<div class="info">' + file.name + '</div>' +
+        '</div>'
+        ),
+        $img = $li.find('img');
+
+
+    // $list为容器jQuery实例
+    $list.append( $li );
+
+    // 创建缩略图
+    // 如果为非图片文件，可以不用调用此方法。
+    // thumbnailWidth x thumbnailHeight 为 100 x 100
+    uploaderTitlePic.makeThumb( file, function( error, src ) {
+        if ( error ) {
+            $img.replaceWith('<span>不能预览</span>');
+            return;
+        }
+
+        $img.attr( 'src', src );
+    }, thumbnailWidth, thumbnailHeight );
+});
+    // 文件上传过程中创建进度条实时显示。
+    uploaderTitlePic.on( 'uploadProgress', function( file, percentage ) {
+        var $li = $( '#'+file.id ),
+            $percent = $li.find('.progress span');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = $('<p class="progress"><span></span></p>')
+                .appendTo( $li )
+                .find('span');
+        }
+
+        $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploaderTitlePic.on( 'uploadSuccess', function( file ) {
+        $( '#'+file.id ).addClass('upload-state-done');
+    });
+
+    // 文件上传失败，显示上传出错。
+    uploaderTitlePic.on( 'uploadError', function( file ) {
+        var $li = $( '#'+file.id ),
+            $error = $li.find('div.error');
+
+        // 避免重复创建
+        if ( !$error.length ) {
+            $error = $('<div class="error"></div>').appendTo( $li );
+        }
+
+        $error.text('上传失败');
+    });
+
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploaderTitlePic.on( 'uploadComplete', function( file ) {
+        $( '#'+file.id ).find('.progress').remove();
+    });
+//    上传头图完成------------------------------------------------------------
 
 
 </script>
-<script type="text/javascript" src="/e/extend/oss-h5-upload-js-direct/lib/crypto1/crypto/crypto.js"></script>
-<script type="text/javascript" src="/e/extend/oss-h5-upload-js-direct/lib/crypto1/hmac/hmac.js"></script>
-<script type="text/javascript" src="/e/extend/oss-h5-upload-js-direct/lib/crypto1/sha1/sha1.js"></script>
-<script type="text/javascript" src="/e/extend/oss-h5-upload-js-direct/lib/base64.js"></script>
-<script type="text/javascript" src="/e/extend/oss-h5-upload-js-direct/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
-<script type="text/javascript" src="/js/upload.js"></script>
 <script>
-    // 三级联动
     layui.use(['picker'], function () {
         var picker = layui.picker;
         //demo1
