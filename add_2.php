@@ -1,7 +1,7 @@
 <?php
 if(!defined('InEmpireCMS'))
 {
-    exit();
+	exit();
 }
 ?>
 <!DOCTYPE html>
@@ -136,7 +136,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                     <div class="service1 service clearfix">
                         <div class="server-change lf">
                             <div class="layui-input-inline">
-                                <input type="checkbox" name="taskheader" lay-skin="switch" lay-filter="taskheader" checked>
+                                <input type="checkbox" name="taskheader" lay-skin="switch" lay-filter="taskheader" >
                             </div>
                         </div>
                         <div class="service-img lf">
@@ -158,7 +158,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                         </div>
 
                     </div>
-                    <div class="service2 service clearfix">
+                    <!-- <div class="service2 service clearfix">
                         <div class="server-change lf">
                             <div class="layui-input-inline">
                                 <input type="checkbox" name="taskfast" lay-skin="switch" lay-filter="taskfast" checked>
@@ -174,14 +174,14 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                         <div class="serive-num rf">
                             <div class="layui-form-item service-fast">
                                 如您的项目在提前
-                                <input class="service-fast-date" type="number" style="color: red;"  value="">
+                                <span class="" style="color: red;"> 30 </span>
                                 天完成,需额外支付
-                                <input  style="color: red;" type="number" class="service-fast-price"  value="">
+                                <span class="" style="color: red;"> 1000 </span>
                                 元
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -234,12 +234,23 @@ require(ECMS_PATH.'e/template/public/footer.php');
             ,laydate = layui.laydate;
 
         for (var i =1;i<=6;i++){
-            laydate.render({
-                elem: '#buildDate0'+i,
-                type:'datetime',
-                format:'yyyy-MM-dd HH:mm',
-                value:new Date()+86400000*i
-            });
+            if(i=1){
+                laydate.render({
+                    elem: '#buildDate0'+i,
+                    min: -1, //7天前
+                    type:'datetime',
+                    format:'yyyy-MM-dd HH:mm',
+                    value:new Date()+86400000*i
+                });
+            }else{
+                laydate.render({
+                    elem: '#buildDate0'+i,
+                    type:'datetime',
+                    format:'yyyy-MM-dd HH:mm',
+                    value:new Date()+86400000*i
+                }); 
+            }
+            
         }
 //        置顶价格动态计算
         form.on('switch(taskheader)', function(data){
@@ -258,7 +269,6 @@ require(ECMS_PATH.'e/template/public/footer.php');
             }
             target.text(needmoney)
         });
-        // 置顶表单变动
         $('.taskheadernum').on('blur',function () {
             var num = $('.taskheadernum').val();
             if (num<0){
@@ -273,40 +283,14 @@ require(ECMS_PATH.'e/template/public/footer.php');
 //        增值费用
         form.on('switch(taskfast)', function(data){
             console.log(data.elem.checked); //开关是否开启，true或者false
-            var target = $('.task-zengzhi-money');//增值费用
-            var serviceFastDate = $('.service-fast-date');//加急日期
-            var serviceFastPrice = $('.service-fast-price');//加急单价
-
+            var target = $('.task-zengzhi-money');
             var needmoney = 0;
-
             if (data.elem.checked){
-                // 两个输入框开启可以输入
-                serviceFastDate.attr('disabled',false);
-                serviceFastPrice.attr('disabled',false);
-                needmoney = serviceFastPrice.val();
-            }else{
-                // 两个输入框关闭可以输入
-                serviceFastDate.attr('disabled','disabled');
-                serviceFastPrice.attr('disabled','disabled');
-                needmoney = 0
+                needmoney = 1000
             }
-            target.text(needmoney>0?needmoney:0)
+            target.text(needmoney)
         });
-        // 加急表单变动
-        $('.service-fast-date').on('blur',function(){
-            var date = $(this).val();
-            if (date<0) {$(this).val(0)};
-            // var price = $('.service-fast-price').val();
-            // var needmoney = date*price;
-            // $('.task-zengzhi-money').text(needmoney);
-        });
-        $('.service-fast-price').on('blur',function(){
-            var price = $(this).val();
-            if (price<0) {$(this).val(0)};
-            // var date = $('.service-fast-date').val();
-            // var needmoney = date*price;
-            $('.task-zengzhi-money').text(price);
-        });
+
     });
 </script>
 </body>

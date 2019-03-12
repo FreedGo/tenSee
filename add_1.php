@@ -194,7 +194,38 @@ require(ECMS_PATH.'e/template/public/footer.php');
         var currentTimeStamp = new Date();
         currentTimeStamp = currentTimeStamp.getTime();
         for (var i =1;i<=6;i++){
+            if(i==1){
 //            给每个时间选择器绑定事件
+            laydate.render({
+                elem: '#buildDate0'+i,
+                type:'datetime',
+                min:1,//最小日期
+                format:'yyyy-MM-dd HH:mm',
+                value:new Date(currentTimeStamp+86400000*i),
+                done: function(value, date, endDate){
+                    console.log(value); //得到日期生成的值，如：2017-08-18
+                    console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+                    var self = this;
+                    var dateNum = self.elem.attr('lay-key');
+//                    当前时间
+                    var currentDateNum =value.replace(/\-|\ |\:/g,'');
+//                    上一个时间
+                    if(dateNum>1){
+                        var beforeDate = $('#buildDate0'+(dateNum-1)).val();
+                        beforeDateNum = beforeDate.replace(/\-|\ |\:/g,'');
+                        if(dateNum>1&&beforeDateNum>=currentDateNum){
+                            layer.alert('当前选择时间小于上一阶段时间,请重新选择',function() {
+                                layer.closeAll();
+                                $(self.elem).val(beforeDate);
+                            });
+
+                        }
+                    }
+                        
+                }
+            });
+            }else{
+                //            给每个时间选择器绑定事件
             laydate.render({
                 elem: '#buildDate0'+i,
                 type:'datetime',
@@ -222,6 +253,7 @@ require(ECMS_PATH.'e/template/public/footer.php');
                         
                 }
             });
+            }
         }
 //        第一个数字加第二个价格 为第三个价格
         $('.three-money-one').on('blur',function () {
