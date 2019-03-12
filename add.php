@@ -327,7 +327,9 @@ require(ECMS_PATH.'e/template/public/footer.php');
 <script src="/js/area_data.js"></script>
 <script type="text/javascript">
 //    实例化百度编辑器
-    var ue = UE.getEditor('container');
+    var ue = UE.getEditor('container',{
+        initialFrameHeight:320
+    });
 //    实例化上传封面图--------------------------------------------------------------------------
     var $list = $('.title-wap')//封面图展示容器
     // 缩略图大小
@@ -474,8 +476,6 @@ require(ECMS_PATH.'e/template/public/footer.php');
     });
 
 </script>
-
-
 <!--协议开始-->
 <script>
     $.ajax({
@@ -498,7 +498,5 @@ require(ECMS_PATH.'e/template/public/footer.php');
 
 </script>
 <!--协议结束-->
-
-
 </body>
 </html>

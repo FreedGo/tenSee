@@ -50,7 +50,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                         <div class="clearfix">
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
-                                <input type="number"  name="title" lay-verify="number" autocomplete="off"
+                                <input type="number"  name="title1" lay-verify="number" autocomplete="off"
                                        placeholder="请输入金额" class="layui-input three-money three-money-one" value=""></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
@@ -64,7 +64,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                         <div class="clearfix">
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
-                                <input type="number" name="title" lay-verify="number" autocomplete="off"
+                                <input type="number" name="title2" lay-verify="number" autocomplete="off"
                                        placeholder="" class="layui-input three-money three-money-two" value="0" readonly value=""></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
@@ -79,7 +79,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="lf inp_ut">
                                 <span class="money-icon">¥</span>
 
-                                <input type="number" name="title" lay-verify="number" autocomplete="off"
+                                <input type="number" name="title3" lay-verify="number" autocomplete="off"
                                        placeholder="" class="layui-input three-money three-money-three" value="0" readonly></div>
                             <!--<div class="rt clearfix">-->
                             <!--<div class="lf inp_tx"><i></i></div>-->
@@ -102,7 +102,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">项目报名截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate01"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate01" name="buildDate01"  placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">项目投标截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate02"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate02" name="buildDate02"  placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">深化方案截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate03"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate03" name="buildDate03"  placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">技术初扩截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate04"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate04" name="buildDate04"  placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">最终成果截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate05"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate05" name="buildDate05" placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
@@ -152,12 +152,51 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                             <div class="layui-inline">
                                 <label class="layui-form-label">项目完成截止时间</label>
                                 <div class="layui-input-inline time-chose">
-                                    <input type="text" class="layui-input bulid-date " id="buildDate06"  placeholder="">
+                                    <input type="text" class="layui-input bulid-date " id="buildDate06" name="buildDate06" placeholder="">
                                     <i class="layui-icon date-icon">&#xe637;</i>
                                 </div>
                             </div>
 
                         </div>
+                         <!--流标处理-->
+                         <style>
+                            .flow-day-num{
+                                line-height: 28px;
+                                height: 28px;
+                                margin: 6px 0 0 0;
+                                /*padding-right: 10px;*/
+                                cursor: pointer;
+                                font-size: 14px;
+                                width: 60px;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            .flow-day-num>input{
+                                height: 28px;
+                                width: 50px;
+                                text-align: center;
+                                padding:0 5px;
+                            }
+
+                        </style>
+                        <div class="layui-form-item time-warp time-color">
+                            <div class="layui-inline">
+                                <h4 class="abortive" style="padding-left: 32px;font-size: 14px;">如遇报名投稿人数不足，造成的流标，将：</h4>
+                                <label class="layui-form-label"></label>
+                                <div class="layui-input-block" style="width: 500px">
+                                    <input type="radio" name="sex" value="重新发标" title="重新发标">
+                                    <input type="radio" name="sex" value="延期" title="延期" checked>
+                                    <div class="flow-day-num ">
+                                        <input type="text" class="abortive-days" name="password" lay-verify="number" value="60" autocomplete="off" class="layui-input">
+                                    </div>
+                                    <div class="flow-day-num">
+                                        天
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--/--流标处理-->
                     </div>
                     <div class="rt clearfix">
                         <div class="lf inp_tx"><i></i></div>
@@ -171,7 +210,7 @@ require(ECMS_PATH.'e/template/public/headeri.php');
         </div>
 
         <div class="task-but main">
-            <button class="task-btn-n1">发布</button>
+            <button lay-submit lay-filter="add1" type="submit" class="task-btn-n1">发布</button>
             <button class="task-btn-n2">预览</button>
         </div>
         </form>
@@ -262,11 +301,18 @@ require(ECMS_PATH.'e/template/public/footer.php');
             $('.three-money-three').val((price1+price1*0.1).toFixed(2))
             $('.three-money-two').val((price1*0.1).toFixed(2))
         })
-        // $('.three-money-two').on('blur',function () {
-        //     var price1 = $(this).val()-0;
-        //     var price2 = $('.three-money-one').val()-0;
-        //     $('.three-money-three').val(price1+price)
-        // })
+        // 表单提交事件处理
+        form.on('submit(add1)', function(data){
+            // console.log(data.field) //当前容器的全部表单字段，名值对形式：{name: value}
+            if(data.field.title1>0){
+                // 跳转下一页面并传值，项目总金额
+                location.herf = '/e/member/task/add_2.php?allPrice='+data.field.title2
+            }else{
+                layer.alert('项目标的必须大于0');
+            }
+
+            // return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        });
     });
 </script>
 </body>

@@ -195,14 +195,14 @@ require(ECMS_PATH.'e/template/public/headeri.php');
                         <li class="money-list-item clearfix">
                             <span class="lf">任务费用：</span><span class="lf" style="color: #EE2222">10000</span>元
                         </li>
-                        <li class="money-list-item clearfix">
+                        <!-- <li class="money-list-item clearfix">
                             <span class="lf">增值费用：</span><span class="lf task-zengzhi-money" style="color: #EE2222">1000</span>元
-                        </li>
+                        </li> -->
                         <li class="money-list-item clearfix">
                             <span class="lf">置顶费用：</span><span class="lf task-ding-money" style="color: #EE2222">0</span>元
                         </li>
                         <li class="money-list-item clearfix " style="font-size: 16px;margin-top: 10px">
-                            <span class="lf">任务费用：</span><span class="lf" style="color: #EE2222">10000</span>元
+                            <span class="lf">任务费用：</span><span class="lf totalMoney" style="color: #EE2222">10000</span>元
                         </li>
                     </ul>
                 </div>
@@ -232,6 +232,9 @@ require(ECMS_PATH.'e/template/public/footer.php');
         var layer = layui.layer
             ,form = layui.form
             ,laydate = layui.laydate;
+            var taskMoney = 1000;//
+            var zhengzhiMoney = 0;
+            var totalMoney = '';
 
         for (var i =1;i<=6;i++){
             if(i=1){
@@ -267,7 +270,9 @@ require(ECMS_PATH.'e/template/public/footer.php');
                 $('.taskheadernum').attr('disabled','disabled')
 
             }
-            target.text(needmoney)
+            target.text(needmoney);
+            zhidingMoney = needmoney;
+            calcMoney();
         });
         $('.taskheadernum').on('blur',function () {
             var num = $('.taskheadernum').val();
@@ -279,17 +284,26 @@ require(ECMS_PATH.'e/template/public/footer.php');
             price = $('.service-price').attr('data-price');
             needmoney = num*price;
             $('.task-ding-money').text(needmoney);
+            zhidingMoney = needmoney;
+            calcMoney();
         })
 //        增值费用
-        form.on('switch(taskfast)', function(data){
-            console.log(data.elem.checked); //开关是否开启，true或者false
-            var target = $('.task-zengzhi-money');
-            var needmoney = 0;
-            if (data.elem.checked){
-                needmoney = 1000
-            }
-            target.text(needmoney)
-        });
+        // form.on('switch(taskfast)', function(data){
+        //     console.log(data.elem.checked); //开关是否开启，true或者false
+        //     var target = $('.task-zengzhi-money');
+        //     var needmoney = 0;
+        //     if (data.elem.checked){
+        //         needmoney = 1000
+        //     }
+        //     target.text(needmoney)
+        // });
+        /**
+         * 自动计算总费用并更新dom
+         */
+        funtion calcMoney(){
+            var allMoney = taskMoney + zhidingMoney;
+            $('.totalMoney').text(allMoney);
+        }
 
     });
 </script>
